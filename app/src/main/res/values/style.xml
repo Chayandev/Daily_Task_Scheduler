@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="roundedCornersShape" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerFamilyTopLeft" >cut</item>
+        <item name="android:radius">16dp</item>
+        <item name="cornerFamilyTopRight">cut</item>
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+    </style>
+</resources>

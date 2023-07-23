@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recylerItemll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+    <TextView
+        android:id="@+id/expired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="expired"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:visibility="gone"
+        android:textColor="#E8E8E8"
+        android:background="@drawable/expired_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/edit_btn"
+        />
+            <CheckBox
+                android:id="@+id/checkDone"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:button="@drawable/checkbox_selector"
+                app:layout_constraintBottom_toTopOf="@id/Time"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/textCol"
+                android:id="@+id/itemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:gravity="center|start"
+                android:text="haiuhu"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/Time"
+                app:layout_constraintLeft_toRightOf="@id/checkDone"
+                app:layout_constraintRight_toLeftOf="@id/edit_btn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="sfhsad"
+                android:textColor="@color/lightGray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/category_tag_ll"
+                app:layout_constraintLeft_toRightOf="@id/checkDone"
+                app:layout_constraintRight_toLeftOf="@id/text"
+                app:layout_constraintTop_toBottomOf="@id/itemText" />
+              <TextView
+                  android:id="@+id/text"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  app:layout_constraintLeft_toRightOf="@id/Date"
+                  app:layout_constraintRight_toLeftOf="@id/Time"
+                  app:layout_constraintTop_toBottomOf="@id/itemText"
+                  android:text=","
+                  android:paddingRight="3dp"
+                  android:textSize="14sp"
+                  android:textColor="@color/lightGray"
+                  app:layout_constraintBottom_toTopOf="@id/category_tag_ll"
+                  />
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lightGray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/category_tag_ll"
+                app:layout_constraintLeft_toRightOf="@id/text"
+                app:layout_constraintTop_toBottomOf="@id/itemText" />
+
+            <ImageButton
+                android:id="@+id/edit_btn"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edit_btn_bg"
+                android:padding="5dp"
+                android:elevation="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baseline_edit_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/itemText"
+                app:layout_constraintRight_toLeftOf="@id/delete"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/delet_btn_bg"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_delete"
+                android:elevation="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/edit_btn"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+             <LinearLayout
+                 android:id="@+id/category_tag_ll"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintLeft_toRightOf="@id/checkDone"
+                 app:layout_constraintTop_toBottomOf="@id/Date"
+                 android:background="@drawable/tag_bg"
+                 android:elevation="3dp"
+                 android:gravity="center"
+                 >
+            <TextView
+                android:id="@+id/category_tag"
+                android:layout_width="0dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="akdj"
+                style="@style/textCol"
+                android:textSize="16sp"
+                android:gravity="left"
+               />
+
+             </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ToDoList" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/secondaryCol</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryCol</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="ScreenBackground">
+        <item name="android:background">@drawable/window_screen_bg</item>
+    </style>
+
+  <style name="topBar"  parent="Widget.MaterialComponents.CardView">
+      <item name="cardBackgroundColor">@color/bottomAndTopBar_bgLight</item>
+  </style>
+    <style name="textCol">
+        <item name="android:textColor">@color/text_color_light</item>
+    </style>
+
+    <style name="bottomBarBg" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="backgroundTint">@color/bottomAndTopBar_bgLight</item>
+
+    </style>
+    <style name="cardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/item_card_bg_light</item>
+    </style>
+    <style name="Dialog">
+        <item name="android:background">@drawable/window_screen_bg</item>
+    </style>
+
+    <style name="dialogTxtCol">
+        <item name="android:textColor">@color/bottomSheetTxtLight</item>
+    </style>
+    <style name="SpinnerWhiteStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+    <style name="addBtnBg" parent="Widget.Design.FloatingActionButton">
+        <item name="android:foreground">@drawable/add_button_bg</item>
+    </style>
+    <style name="doneBtnBg" parent="Widget.Design.FloatingActionButton">
+        <item name="android:foreground">@drawable/done_button_bg</item>
+    </style>
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_light_bg</item>
+    </style>
+
+
+</resources>

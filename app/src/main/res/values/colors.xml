@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGray">#C1C1C1</color>
+    <color name="darkEdit">#151515</color>
+    <color name="hint">#858585</color>
+    <!--    light mode-->
+    <color name="BackGroundLight">#FFFFFF</color>
+    <color name="item_card_bg_light">#FFFFFF</color>
+    <color name="text_color_light">#000000</color>
+    <color name="icon_tint_light">#52a889</color>
+    <color name="bottomAndTopBar_bgLight">#FFFFFF</color>
+    <color name="secondaryCol">#FFFFFF</color>
+    <color name="secondaryColOrg">#ff944e</color>
+    <color name="bottomSheetBgLight">#D3E9D4</color>
+    <color name="bottomSheetTxtLight">#ff944e</color>
+    <!--    dark mode-->
+    <color name="BackGroundDark">#1f1f1f</color>
+    <color name="item_card_bg_Dark">#2c2e30</color>
+    <color name="text_color_Dark">#FFFFFFFF</color>
+    <color name="icon_tint_dark">#A6A9C8</color>
+    <color name="bottomAndTopBar_bgDark">#2c2e30</color>
+    <color name="bottomSheetBgDark">#343231</color>
+    <color name="bottomSheetTxtDark">#ffa870</color>
+   <color name="inactive">#BED9D9D9</color>
+    <color name="btnStartCl">#ffa870</color>
+    <color name="btnEndCl">#ff944e</color>
+    <color name="checkedBg">#27B8A2</color>
+    <color name="expiredBg">#D24B40</color>
+
+    <color name="addButton">#E94A120E</color>
+    <color name="ItemBack">#E9000000</color>
+    <color name="DeletBack">#F6FF1100</color>
+    <color name="dateCol">#777A89</color>
+    <color name="editCol">#ffb864</color>
+    <color name="dialog_bg_col">#3F4C51</color>
+    <color name="dialog_heading_txt">#077663</color>
+    <color name="transparent">#00707070</color>
+    <color name="float_btn_bg">#077663</color>
+    <color name="item_bg">#1b2428</color>
+    <color name="txt_add_task_ll">#0273A0</color>
+    <color name="gray">#84A7A7A7</color>
+    <color name="tag_bg">#D09A9490</color>
+    <color name="tRedBg">#F6FF1100</color>
+    <color name="fd">#45694B</color>
+
+    <color name="t">#00FF00</color>
+    <color name="r">#9E9E9E</color>
+    <color name="e">#FF5252</color>
+</resources>
